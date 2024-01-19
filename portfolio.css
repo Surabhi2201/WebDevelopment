@@ -1,0 +1,243 @@
+body{
+    background-color: rgb(5, 14, 9);
+   
+}
+
+.navigation{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color:black;
+    color: aqua;
+    border-radius: 10px;
+    font-size:25px;
+    border:3px solid rgb(26, 213, 197);
+    box-shadow:0px 0px 10px white,
+              0px 0px 10px white inset;
+}
+a{
+    color:burlywood;
+    text-decoration: none;
+}
+.home{
+    height:50px;
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.Skills{
+    height:50px;
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.About{
+    height:50px;
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.Contact-Me{
+    height:50px;
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+a:hover{
+    color:blanchedalmond;
+}
+
+#nav:hover{
+    
+    color: brown;
+    border-radius:10px;
+    animation:rubberBand ;
+    animation-duration:1s;
+    animation-iteration-count: 8;
+    border:3px solid rgb(26, 213, 48);
+    box-shadow:0px 0px 10px rgb(9, 59, 2),
+              0px 0px 10px white inset;
+    
+}
+
+
+.photo-area{
+    height:500px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    height:400px;
+    width:400px;
+    background-image:url("photo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow:0px 0px 10px #ec7804,
+              0px 0px 10px #ec7804 inset;
+    border:6px solid #f76d0b;
+    border-radius: 100%;
+    margin-left:40%;
+    margin-right:40%;
+    margin-top: 10%;
+    animation:pulse;
+    animation-duration:3s;
+   animation-iteration-count: infinite;
+
+}
+
+.photo:hover{
+    border:5px solid rgb(39, 130, 163);
+    box-shadow:0px 0px 10px white,
+              0px 0px 10px white inset;
+}
+
+
+.name{
+    margin-top: 10px;
+    height:100px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullName{
+    
+    margin-top:10%;
+    height:80px;
+    width:100%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+    font-size: larger;
+    color:rgb(181, 228, 221);
+    text-decoration: solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    animation:shakeX;
+    animation-duration:3s;
+   animation-iteration-count: 5;
+   border:3px solid rgb(221, 225, 11);
+   box-shadow:0px 0px 5px rgb(221, 221, 230),
+             0px 0px 5px rgb(234, 234, 240) inset;
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    
+    border-radius:5px;
+    width:50%;
+    height:300px;
+    text-align: center;
+    font-family:Georgia;
+    color:rgb(233, 234, 231);
+    
+    font-size:larger;
+    background-image: url("splash3.jpg");
+    background-size: cover;
+    
+    
+}
+
+.contain-outer{
+    display:flex;
+    height:500px;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content:hover{
+    border:3px solid rgb(232, 232, 218);
+    box-shadow:0px 0px 5px rgb(208, 215, 6),
+              0px 0px 5px rgb(208, 215, 6) inset;
+     
+    width:60%;
+    height:400px;
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    border-radius:30px;
+    font-size: x-large;
+
+}
+
+
+.fullName{
+    display: inline-flex;
+}
+
+.fullName .static-txt{
+  color:#fff;
+  font-size:larger;
+  font-weight: 400;
+
+}
+
+.fullName .dynamic-txt{
+ margin-left: 15px;
+ overflow:hidden;
+}
+
+
+.dynamic-txt li{
+  color: #FC6D6D;
+  list-style:none;
+  font-size:larger;
+  font-weight: 500;
+}
+.dynamic-txt li span{
+    position:relative;
+ 
+}
+span{
+    color:rgb(248, 255, 54);
+   background-color: rgb(5, 14, 9);
+   
+}
+.dynamic-txt li span::after{
+ content: "";
+ position:absolute;
+ left:0;
+ height:100%;
+ width:100%;
+ border-left: 2px solid rgb(38, 211, 18);
+ background-color:rgb(5, 14, 9) ;
+ animation: typing 1.5s steps(20) infinite;
+ 
+}
+
+@keyframes typing{
+    100%{
+        left:100%;
+        margin: 0px -35px 0 35px;
+
+       }
+
+}
+
+.text1{
+    margin-top: 10%;
+    height:20px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:burlywood;
+    font-family:'Courier New', Courier, monospace;
+}
